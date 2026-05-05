@@ -33,3 +33,16 @@ function criarCoracoes(){
         setTimeout(()=> coracao.remove(), 5000);
     }
 }
+
+/* modal imagens */
+function abrirModal(src){
+    const modal = document.getElementById("modal");
+    const img = document.getElementById("imgModal");
+
+    img.src = src;
+    modal.style.display = "flex";
+}
+
+function fecharModal(){
+    document.getElementById("modal").style.display = "none";
+}

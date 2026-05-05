@@ -50,15 +50,20 @@
     <h1>Nossos momentos 💖</h1>
 
     <div class="galeria">
-        <img src="./foto1.jpeg">
-        <img src="./foto2.jpeg">
-        <img src="./foto3.jpeg">
-        <img src="./foto4.jpeg">
-        <img src="./foto5.jpeg">
-        <img src="./foto6.jpeg">
-        <img src="./foto7.jpeg">
-        <img src="./foto8.jpeg">
+        <img src="./foto1.jpeg" onclick="abrirModal(this.src)">
+        <img src="./foto2.jpeg" onclick="abrirModal(this.src)">
+        <img src="./foto3.jpeg" onclick="abrirModal(this.src)">
+        <img src="./foto4.jpeg" onclick="abrirModal(this.src)">
+        <img src="./foto5.jpeg" onclick="abrirModal(this.src)">
+        <img src="./foto6.jpeg" onclick="abrirModal(this.src)">
+        <img src="./foto7.jpeg" onclick="abrirModal(this.src)">
+        <img src="./foto8.jpeg" onclick="abrirModal(this.src)">
     </div>
+</div>
+
+<!-- MODAL -->
+<div id="modal" class="modal" onclick="fecharModal()">
+    <img id="imgModal">
 </div>
 
 <script src="script.js"></script>
