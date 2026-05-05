@@ -11,6 +11,26 @@ function abrirCarta(el){
     cartaAberta = true;
 
     el.classList.add("abrir");
+    criarCoracoes();
+}
+
+/* CORAÇÕES 💖 */
+function criarCoracoes(){
+    for(let i=0;i<40;i++){
+        let coracao = document.createElement("div");
+        coracao.classList.add("coracao");
+
+        const emojis = ["💖","❤️","💕","💘"];
+        coracao.innerHTML = emojis[Math.floor(Math.random()*emojis.length)];
+
+        coracao.style.left = Math.random()*100 + "vw";
+        coracao.style.fontSize = (Math.random()*15 + 15) + "px";
+        coracao.style.animationDuration = (Math.random()*2 + 3) + "s";
+
+        document.body.appendChild(coracao);
+
+        setTimeout(()=> coracao.remove(),5000);
+    }
 }
 
 /* modal */
