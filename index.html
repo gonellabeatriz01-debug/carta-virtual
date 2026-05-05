@@ -3,16 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Uma surpresa 💖</title>
+<title>Uma surpresa ❤️</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<!-- MÚSICA -->
+<audio id="musica" loop>
+    <source src="musica.mp3" type="audio/mpeg">
+</audio>
+
+<!-- BOTÃO MÚSICA -->
+<button id="btnMusica" onclick="toggleMusica()">🔊</button>
+
 <!-- TELA 1 -->
 <div class="tela ativa" id="tela1">
-    <h1>Oi, Meu amor...</h1>
-    <button onclick="proximaTela(2)">Clique aqui</button>
+    <h1>Oi...</h1>
+    <button onclick="proximaTela(2); iniciarMusica()">Clique aqui</button>
 </div>
 
 <!-- TELA 2 -->
@@ -35,19 +43,19 @@
         <div class="carta">
             <h3>💌 Para você</h3>
             <p>
-                Você é muito especial pra mim 💖<br><br>
+                Você é muito especial pra mim ❤️<br><br>
                 Eu só queria te lembrar disso hoje.<br><br>
-                Nunca esqueça o quanto você é incrível 
+                Nunca esqueça o quanto você é incrível
             </p>
-            <br><br>
-            <button onclick="proximaTela(5)">Lembrar de alguns momentos</button>
+            <br>
+            <button onclick="proximaTela(5)">Ver nossos momentos</button>
         </div>
     </div>
 </div>
 
 <!-- TELA 5 -->
 <div class="tela" id="tela5">
-    <h1>Nossos momentos 💖</h1>
+    <h1>Nossos momentos ❤️</h1>
 
     <div class="galeria">
         <img src="./foto1.jpeg" onclick="abrirModal(this.src)">
